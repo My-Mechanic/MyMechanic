@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
+<head>
+<script src="https://thunkable.github.io/webviewer-extension/thunkableWebviewerExtension.js"></script>
+</head>
 <body>
 <image id="myImage" src= "" style="width:100%"> </image>
-<script src="https://thunkable.github.io/webviewer-extension/thunkableWebviewerExtension.js"></script>
+
 <script>
 ThunkableWebviewerExtension.receiveMessage(function(message) {
 	document.getElementById('myImage').src = "https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg"
