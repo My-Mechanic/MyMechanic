@@ -5,7 +5,7 @@
 <script src="https://thunkable.github.io/webviewer-extension/thunkableWebviewerExtension.js"></script>
 <script>
 ThunkableWebviewerExtension.receiveMessage(function(message) {
-	document.getElementById('myImage').src = message
+	document.getElementById('myImage').src = + "\"" + message + "\""
 }
 </script>
 </body>
