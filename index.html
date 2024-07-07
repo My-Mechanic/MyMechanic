@@ -1,1 +1,12 @@
-
+<!DOCTYPE html>
+<html>
+<body>
+<image id="myImage" src= "" style="width:100%"> </image>
+<script src="https://thunkable.github.io/webviewer-extension/thunkableWebviewerExtension.js"></script>
+<script>
+ThunkableWebviewerExtension.receiveMessage(function(message) {
+	document.getElementById('myImage').src = '"' + message + '"'
+}
+</script>
+</body>
+</html>
